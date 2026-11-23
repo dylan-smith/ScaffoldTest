@@ -1,0 +1,32 @@
+@ScaffoldTest.Api_HostAddress = http://localhost:5269
+@contentType = application/json
+
+GET {{ScaffoldTest.Api_HostAddress}}/api/projects
+Accept: {{contentType}}
+
+###
+
+POST {{ScaffoldTest.Api_HostAddress}}/api/projects
+Content-Type: {{contentType}}
+Accept: {{contentType}}
+
+{
+  "name": "Sample project"
+}
+
+###
+
+PUT {{ScaffoldTest.Api_HostAddress}}/api/projects/1
+Content-Type: {{contentType}}
+Accept: {{contentType}}
+
+{
+  "name": "Updated project"
+}
+
+###
+
+DELETE {{ScaffoldTest.Api_HostAddress}}/api/projects/1
+Accept: {{contentType}}
+
+###
