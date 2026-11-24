@@ -39,7 +39,7 @@ param googleClientId = readEnvironmentVariable('GOOGLE_CLIENT_ID', '')
 param serviceToken = readEnvironmentVariable('SCAFFOLDTEST_SERVICE_TOKEN')
 
 // Monitoring
-param logAnalyticsWorkspaceName = 'ScaffoldTest'
+param logAnalyticsWorkspaceName = 'ScaffoldTest-Logs'
 param appInsightsName = 'ScaffoldTest'
 
 // Alerts (email + Azure mobile app push; Slack when the SLACK_WEBHOOK_URL secret is set)
