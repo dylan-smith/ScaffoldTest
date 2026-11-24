@@ -12,7 +12,7 @@ param sqlServerName = 'scaffoldtest-preview-sql'
 
 // The free offer covers 10 databases per subscription, one of which is production's. Turn this off if a
 // deployment fails because they're used up (an existing database keeps the setting it was created with).
-param useFreeLimit = true
+param useFreeLimit = false
 
 // The database's current tags, as JSON, so the deployment keeps them (see the parameter in preview.bicep)
 param existingDatabaseTags = json(readEnvironmentVariable('PREVIEW_DATABASE_TAGS', '{}'))
